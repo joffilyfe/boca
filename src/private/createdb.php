@@ -52,13 +52,13 @@ if(system('test "`id -u`" -eq "0"',$retval)===false || $retval!=0) {
 echo "\nThis will erase all the data in your bocadb database.";
 echo "\n***** YOU WILL LOSE WHATEVER YOU HAVE THERE!!! *****";
 echo "\nType YES and press return to continue or anything else will abort it: ";
-$resp = strtoupper(trim(fgets(STDIN)));
-if($resp != 'YES') exit;
+#$resp = strtoupper(trim(fgets(STDIN)));
+#if() exit;
 
 echo "\ndropping database\n";
 DBDropDatabase();
 echo "creating database\n";
-DBCreateDatabase();
+#DBCreateDatabase();
 echo "creating tables\n";
 DBCreateContestTable();
 DBCreateSiteTable();

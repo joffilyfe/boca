@@ -347,6 +347,7 @@ if($retval != 0) {
 		}
 		$zip->extractTo($dir, array_merge(array("run" . $ds . $run["extension"]),array("compare" . $ds . $run["extension"]),$inputlist,$outputlist));
 		$zip->close();
+		echo $dir.$ds.'output';
 		if(chmod($dir . $ds . 'output', 0700)==false || chown($dir . $ds . 'output','root') == false) {
 			echo "Failed to chown/chdir the output folder -- please check the system and problem package\n";
 			DBGiveUpRunAutojudging($contest, $site, $number, $ip, "Autojuging error: chown/chmod failed for output (99)");

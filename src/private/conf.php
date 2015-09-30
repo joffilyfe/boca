@@ -18,20 +18,20 @@
 // Last modified 05/aug/2012 by cassio@ime.usp.br
 
 function globalconf() {
- $conf["dbencoding"]="UTF8";
- $conf["dbclientenc"]="UTF8";
+ $conf["dbencoding"]="UTF-8";
+ $conf["dbclientenc"]="UTF-8";
 
-  $conf["dblocal"]="false"; // use unix socket to connect?
-$conf["dbhost"]="localhost";
-$conf["dbport"]="5432";
+  $conf["dblocal"]="true"; // use unix socket to connect?
+  $conf["dbhost"]="127.0.0.1";
+  $conf["dbport"]="5432";
 
-  $conf["dbname"]="bocadb"; // name of the boca database
+  $conf["dbname"]="template1"; // name of the boca database
 
-  $conf["dbuser"]="bocauser"; // unprivileged boca user
-$conf["dbpass"]="dAm0HAiC";
+  $conf["dbuser"]="administrador"; // unprivileged boca user
+  $conf["dbpass"]="phpeste";
 
-  $conf["dbsuperuser"]="bocauser"; // privileged boca user
-$conf["dbsuperpass"]="dAm0HAiC";
+  $conf["dbsuperuser"]="administrador"; // privileged boca user
+  $conf["dbsuperpass"]="phpeste";
 
         // note that it is fine to use the same user
 
@@ -46,14 +46,14 @@ $conf["dbsuperpass"]="dAm0HAiC";
 
   // secret key to be used in HTTP headers
   // you MUST set it with any random large enough sequence
-$conf["key"]="GG56KFJtNDBGjJprR6ex";
+  $conf["key"]="GG56KFJtNDBGjJprR6ex";
 
 
   // the following field is used by the autojudging script
   // set it with the ip of the computer running the script
   // The real purpose of it is only to differentiate between
   // autojudges when multiple computers are used as autojudges
-  $conf["ip"]='local';
+  $conf["ip"]='10.0.2.15';
 
   return $conf;
 }

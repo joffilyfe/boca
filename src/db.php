@@ -266,7 +266,7 @@ function DBCreateDatabase() {
 				   " password=".$conf["dbsuperpass"]);
 
 	 if(!$conn) {
-		 MSGError("Unable to connect to template1 as ".$conf["dbsuperuser"]);
+		 MSGError("Unable to connect to xtemplate1 as ".$conf["dbsuperuser"]);
 		 exit;
 	 }
 	 if(isset($conf["dbencoding"]))

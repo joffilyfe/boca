@@ -28,8 +28,9 @@ function scoretransfer($putname, $localsite) {
 			$bocaproxy = 'tcp://' . $bocaproxy;
 		$bocaproxylogin = @trim($pif['proxylogin']);
 		$bocaproxypass = @trim($pif['proxypassword']);
-		if($bocaproxylogin != "")
-			$bocaproxypass = base64_encode($bocaproxylogin . ":" . $bocaproxypass)
+		if($bocaproxylogin != "") {
+			$bocaproxypass = base64_encode($bocaproxylogin . ":" . $bocaproxypass);
+		}
 	} else {
 		$bocaproxy = "";
 		$bocaproxypass = "";
