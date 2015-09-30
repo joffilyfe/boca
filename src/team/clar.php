@@ -32,7 +32,7 @@ if (isset($_POST["message"]) && isset($_POST["problem"]) && isset($_POST["Submit
 $_SESSION["popuptime"] = time();
 ?>
 <br>
-<table width="100%" border=1>
+<table width="100%" class="table table-striped">
  <tr>
 <!--  <td><b>Clar #</b></td>-->
   <td><b>Time</b></td>

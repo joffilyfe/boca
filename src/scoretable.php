@@ -279,7 +279,7 @@ if($redo) {
 		}
 	}
 
-	$strtmp .= "<br>\n<table id=\"myscoretable\" width=\"100%\" border=1>\n <tr>\n  <td><b>#</b></td>\n  <td><b>User</b></td>\n  <td><b>Name</b></td>\n";
+	$strtmp .= "<br>\n<table id=\"myscoretable\" width=\"100%\" class=\"table table-striped\">\n <tr>\n  <td><b>#</b></td>\n  <td><b>User</b></td>\n  <td><b>Name</b></td>\n";
 	if(!$des) {
 		if($level>0)
 			$strtmp .= "<td><b>Problems</b></td>";

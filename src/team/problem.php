@@ -23,7 +23,7 @@ if(($ct = DBContestInfo($_SESSION["usertable"]["contestnumber"])) == null)
 
 ?>
 <br>
-<table width="100%" border=1>
+<table width="100%" class="table table-striped">
  <tr>
   <td><b>Name</b></td>
   <td><b>Basename</b></td>

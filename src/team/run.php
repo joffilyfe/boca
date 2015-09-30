@@ -90,7 +90,7 @@ if($redo) {
 	$_SESSION['forceredo']=false;
 	if(($st = DBSiteInfo($_SESSION["usertable"]["contestnumber"],$_SESSION["usertable"]["usersitenumber"])) == null)
         ForceLoad("../index.php");
-	$strtmp="<br>\n<table width=\"100%\" border=1>\n <tr>\n  <td><b>Run #</b></td>\n<td><b>Time</b></td>\n".
+	$strtmp="<br>\n<table width=\"100%\" class=\"table table-striped\">\n <tr>\n  <td><b>Run #</b></td>\n<td><b>Time</b></td>\n".
 		"  <td><b>Problem</b></td>\n  <td><b>Language</b></td>\n  <td><b>Answer</b></td>\n  <td><b>File</b></td>\n </tr>\n";
 	$strcolors = "0";
 	$run = DBUserRuns($_SESSION["usertable"]["contestnumber"],

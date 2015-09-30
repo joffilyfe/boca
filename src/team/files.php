@@ -56,7 +56,7 @@ if (isset($_FILES["sourcefile"]) && isset($_POST["Submit"]) && $_FILES["sourcefi
 }
 ?>
 <br>
-<table width="100%" border=1>
+<table width="100%" class="table table-striped">
  <tr>
   <td><b>Bkp #</b></td>
   <td><b>Time</b></td>
