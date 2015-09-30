@@ -126,7 +126,7 @@ if($redo) {
 $strtmp .= "</table>";
 if (count($run) == 0) $strtmp .= "<br><center><b><font color=\"#ff0000\">NO RUNS AVAILABLE</font></b></center>";
 
-$strtmp .= "<br><br><center><b>To submit a program, just fill in the following fields:</b></center>\n".
+$strtmp .= "<h2 class=\"text-center\">To submit a program, just fill in the following fields:</h2>\n".
 "<form name=\"form1\" enctype=\"multipart/form-data\" method=\"post\" action=\"". $runteam ."\">\n".
 "  <input type=hidden name=\"confirmation\" value=\"noconfirm\" />\n".
 "  <center>\n".
@@ -134,29 +134,29 @@ $strtmp .= "<br><br><center><b>To submit a program, just fill in the following f
 "      <tr> \n".
 "        <td width=\"25%\" align=right>Problem:</td>\n".
 "        <td width=\"75%\">\n".
-"          <select name=\"problem\" onclick=\"Arquivo()\">\n";
+"          <div class=\"form-group\"><select class=\"form-control\" name=\"problem\" onclick=\"Arquivo()\">\n";
 $prob = DBGetProblems($_SESSION["usertable"]["contestnumber"],$_SESSION["usertable"]["usertype"]=='judge');
 $strtmp .= "<option selected value=\"-1\"> -- </option>\n";
 for ($i=0;$i<count($prob);$i++)
 	$strtmp .= "<option value=\"" . $prob[$i]["number"] . "\">" . $prob[$i]["problem"] . "</option>\n";
-$strtmp .= "	  </select>\n".
+$strtmp .= "	  </select></div>\n".
 "        </td>\n".
 "      </tr>\n".
 "      <tr> \n".
 "        <td width=\"25%\" align=right>Language:</td>\n".
 "        <td width=\"75%\"> \n".
-"          <select name=\"language\" onclick=\"Arquivo()\">\n";
+"          <div class=\"form-group\"><select class=\"form-control\" name=\"language\" onclick=\"Arquivo()\">\n";
 $lang = DBGetLanguages($_SESSION["usertable"]["contestnumber"]);
 $strtmp .= "<option selected value=\"-1\"> -- </option>\n";
 for ($i=0;$i<count($lang);$i++)
 	$strtmp .= "<option value=\"" . $lang[$i]["number"] . "\">" . $lang[$i]["name"] . "</option>\n";
-$strtmp .= "	  </select>\n".
+$strtmp .= "	  </select></div>\n".
 "        </td>\n".
 "      </tr>\n".
 "      <tr> \n".
 "        <td width=\"25%\" align=right>Source code:</td>\n".
 "        <td width=\"75%\">\n".
-"	  <input type=\"file\" name=\"sourcefile\" size=\"40\" onclick=\"Arquivo()\">\n".
+"	  <div class=\"form-group\"><input type=\"file\" name=\"sourcefile\" size=\"40\" onclick=\"Arquivo()\"></div>\n".
 "        </td>\n".
 "      </tr>\n".
 "    </table>\n".
@@ -173,8 +173,8 @@ $strtmp .= "	  </select>\n".
 "    }\n".
 "  </script>\n".
 "  <center>\n".
-"      <input type=\"submit\" name=\"Submit\" value=\"Send\" onClick=\"conf()\">\n".
-"      <input type=\"reset\" name=\"Submit2\" value=\"Clear\">\n".
+"      <div class=\"form-group\"><input class=\"btn btn-primary\" type=\"submit\" name=\"Submit\" value=\"Send\" onClick=\"conf()\">\n".
+"      <input class=\"btn btn-warning\" type=\"reset\" name=\"Submit2\" value=\"Clear\">\n</div>".
 "  </center>\n".
 "</form>\n";
     $conf=globalconf();

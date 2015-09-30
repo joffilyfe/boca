@@ -105,9 +105,10 @@ require_once('version.php');
 }
 ?>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body onload="document.form1.name.focus()">

@@ -20,7 +20,8 @@
 require 'versionnum.php';
 
 echo "<br /><hr />\n";
-echo "<p>Powered by BOCA $BOCAVERSION. Copyright (c) 2003-$YEAR BOCA System (bocasystem@gmail.com). All rights reserved. Bootstrap them by Joffily</p>\n";
+echo "<p>Powered by BOCA $BOCAVERSION. Copyright (c) 2003-$YEAR BOCA System (bocasystem@gmail.com). All rights reserved.</p>\n";
+echo "<p>Bootstrap theme by Joffily (contato@joffily.me).</p>";
 echo "</body></html>";
 exit;
 ?>

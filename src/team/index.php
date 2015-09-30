@@ -18,5 +18,7 @@
 // Last modified 05/aug/2012 by cassio@ime.usp.br
 require('header.php');
 ?>
+  <h1 class="text-center">Welcome to B.O.C.A</h1>
+</div>
 </body>
 </html>

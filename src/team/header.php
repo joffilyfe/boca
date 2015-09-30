@@ -32,15 +32,12 @@ $runteam='run.php';
 
 echo "<html><head><title>Team's Page</title>\n";
 echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n";
+echo "<link rel=stylesheet href=\"../Css.php\" type=\"text/css\">\n";
 ?>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
-
+<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
 <?php
 //echo "<meta http-equiv=\"refresh\" content=\"60\" />"; 
 
@@ -73,6 +70,11 @@ if($_SESSION["usertable"]["usertype"] != "team") {
 	</nav> -->
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/team/index.php">
+					<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+				</a>
+			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
 				<ul class="nav navbar-nav">
 					<li><a href="problem.php">Problems</a></li>
