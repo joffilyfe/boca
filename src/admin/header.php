@@ -39,7 +39,7 @@ if(!isset($_POST['noflush'])) {
 	require_once("$locr/version.php");
 	echo "<html><head><title>Admin's Page</title>\n";
 	echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n";
-	echo "<link rel=stylesheet href=\"$loc/Css.php\" type=\"text/css\">\n";
+	echo "<link rel=stylesheet href=\"$loc/Css2.php\" type=\"text/css\">\n";
 }
 
 //echo "<meta http-equiv=\"refresh\" content=\"60\" />";

@@ -115,7 +115,7 @@ require_once('version.php');
 
   <div class="container">
     <div class="col-md-6 col-md-offset-3">
-      <img class="img-responsive center-block" src="/images/tsi.jpg" alt="Apoio Sistemas para Internet">
+      <img class="img-responsive center-block" src="/images/pop.png" alt="Apoio Sistemas para Internet">
       <h1 class="text-center">Login</h1>
       <form name="form1" action="javascript:computeHASH()">
         <div class="form-group">
